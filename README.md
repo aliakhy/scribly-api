@@ -33,25 +33,25 @@ Scribly is a web application for managing and publishing articles, built with Dj
    
 3. Create  a virtual environment:
 
-python -m venv env
+   python -m venv env
 
-.\env\Scripts\activate
+   .\env\Scripts\activate
 
 3. Install dependencies:
 
-cd scribly_api
+   cd scribly_api
 
-pip install -r requirements.txt
+   pip install -r requirements.txt
 
 4. Apply migrations:
    
-pythom manage.py makemigrations
+   pythom manage.py makemigrations
 
-python manage.py migrate
+   python manage.py migrate
 
 6. Run the development server:
 
-python manage.py runserver
+   python manage.py runserver
 
 
 ## Usage
