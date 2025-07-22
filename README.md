@@ -27,7 +27,7 @@ Scribly is a web application for managing and publishing articles, built with Dj
 
 1. Clone the repository:
 
-   git clone https://github.com/aliakhy/scribly-api
+   git clone https://github.com/aliakhy/scribly-api.git
    cd scribly_api
    
 2. Create  a virtual environment:
