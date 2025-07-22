@@ -29,7 +29,7 @@ Scribly is a web application for managing and publishing articles, built with Dj
 
    git clone https://github.com/aliakhy/scribly-api.git
    
-   cd scribly_api
+   cd scribly-api
    
 3. Create  a virtual environment:
 
@@ -39,12 +39,14 @@ python -m venv env
 
 3. Install dependencies:
 
+cd scribly_api
 pip install -r requirements.txt
 
 4. Apply migrations:
+pythom manage.py makemigrations
 python manage.py migrate
 
-5. Run the development server:
+6. Run the development server:
 python manage.py runserver
 
 
