@@ -40,13 +40,17 @@ python -m venv env
 3. Install dependencies:
 
 cd scribly_api
+
 pip install -r requirements.txt
 
 4. Apply migrations:
+   
 pythom manage.py makemigrations
+
 python manage.py migrate
 
 6. Run the development server:
+
 python manage.py runserver
 
 
