@@ -16,8 +16,8 @@ Scribly is a web application for managing and publishing articles, built with Dj
 
 ## Prerequisites
 
-- Python 3.8 or higher  
-- Django 4.x  
+- Python   
+- Django   
 - Django REST Framework  
 - Django REST Framework SimpleJWT  
 - Pillow  
@@ -33,8 +33,8 @@ Scribly is a web application for managing and publishing articles, built with Dj
    
 3. Create  a virtual environment:
 
-
 python -m venv env
+
 .\env\Scripts\activate
 
 3. Install dependencies:
