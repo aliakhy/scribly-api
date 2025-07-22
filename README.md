@@ -62,18 +62,18 @@ Scribly is a web application for managing and publishing articles, built with Dj
 - `POST /accounts/login/` –  JWT access and refresh tokens  
 - `POST /accounts/token-refresh/` – Refresh  access   
 - `POST /accounts/logout/` – Log out and blacklist the refresh token  
-- `GET /accounts/protected/` – Access a protected view 
+- `GET /accounts/protected/` – Protected view 
 - `GET /accounts/profile/` – Retrieve user profile (requires authentication)  
 - `POST /accounts/profile/change-password/` – Change password (requires authentication)  
 
 ### Password Reset 
 
 - `POST /accounts/password-reset/` – password reset with email  
-- `POST /accounts/password-reset/confirm/<uidb64>/<token>/` –  set new password  
+- `POST /accounts/password-reset/confirm/<uidb64>/<token>/` –  Set new password  
 
 ### Article Management
 
-- `/articles/` – a view set
+- `/articles/` – A view set
 
 
 
