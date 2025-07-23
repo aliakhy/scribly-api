@@ -16,8 +16,8 @@ Scribly is a web application for managing and publishing articles, built with Dj
 
 ## Prerequisites
 
-- Python 3.8 or higher  
-- Django 4.x  
+- Python   
+- Django   
 - Django REST Framework  
 - Django REST Framework SimpleJWT  
 - Pillow  
@@ -27,21 +27,67 @@ Scribly is a web application for managing and publishing articles, built with Dj
 
 1. Clone the repository:
 
-   git clone https://github.com/username/scribly.git
-   cd scribly
+   git clone https://github.com/aliakhy/scribly-api.git
    
-Create  a virtual environment:
+   cd scribly-api
+   
+3. Create  a virtual environment:
+
+   python -m venv env
+
+   .\env\Scripts\activate
+
+3. Install dependencies:
+
+   cd scribly_api
+
+   pip install -r requirements.txt
+
+4. Apply migrations:
+   
+   pythom manage.py makemigrations
+
+   python manage.py migrate
+
+6. Run the development server:
+
+   python manage.py runserver
 
 
-python -m venv env
-.\env\Scripts\activate
+## Usage
 
-Install dependencies:
+###  User Management
 
-pip install -r requirements.txt
+- `POST /accounts/register/` – Register   
+- `POST /accounts/login/` –  JWT access and refresh tokens  
+- `POST /accounts/token-refresh/` – Refresh  access   
+- `POST /accounts/logout/` – Log out and blacklist the refresh token  
+- `GET /accounts/protected/` – Protected view 
+- `GET /accounts/profile/` – Retrieve user profile (requires authentication)  
+- `POST /accounts/profile/change-password/` – Change password (requires authentication)  
 
-Apply migrations:
-python manage.py migrate
+### Password Reset 
 
-Run the development server:
-python manage.py runserver
+- `POST /accounts/password-reset/` – password reset with email  
+- `POST /accounts/password-reset/confirm/<uidb64>/<token>/` –  Set new password  
+
+### Article Management
+
+- `/articles/` – A view set
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
