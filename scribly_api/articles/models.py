@@ -10,8 +10,19 @@ def article_image_upload_to(instance, filename):
 
 class Article(models.Model):
     class ArticleCategory(models.TextChoices):
-        sport='sport'
-        programing='programing'
+        sport ='sport'
+        programing ='programing'
+        politics ='politics'
+        economy ='economy'
+        sport ='sport'
+        technology ='technology'
+        health = 'health'
+        education = 'education'
+        art = 'art'
+        culture = 'culture'
+        science ='science'
+        opinion = 'opinion'
+        entertainment ='entertainment'
 
 
     title = models.CharField(

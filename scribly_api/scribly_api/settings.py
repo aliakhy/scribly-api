@@ -28,7 +28,6 @@ INSTALLED_APPS = [
     'accounts',
     'articles',
 
-
     #installed library
     'rest_framework',
     'rest_framework_simplejwt',
