@@ -14,7 +14,6 @@ class Article(models.Model):
         programing ='programing'
         politics ='politics'
         economy ='economy'
-        sport ='sport'
         technology ='technology'
         health = 'health'
         education = 'education'
